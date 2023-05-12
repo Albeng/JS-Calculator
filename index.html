@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>JS Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="root">
-        <h1>Calculator</h1>
-        <div class="main">
-            <div class="display">
-                <p class="small-display">123</p>
-                <p class="large-display">0</p>
-            </div>
-            <div class="inputs">
-                <button class="is-clear">C</button>
-                <button>&divide;</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>&times;</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>&minus;</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>&plus;</button>              
-                <button class="is-zero">0</button>
-                <button>&equals;</button>
-            </div>
+      <h1>Calculator</h1>
+      <div class="main">
+        <div class="display">
+          <input type="text" class="small-display" />
+          <input type="text" class="large-display" placeholder="0" />
         </div>
-    </div>
+        <div class="inputs">
+          <button class="is-clear">C</button>
+          <button class="is-operator divide-button">&divide;</button>
 
+          <button class="is-num">7</button>
+          <button class="is-num">8</button>
+          <button class="is-num">9</button>
+          <button class="is-operator times-button">&times;</button>
+
+          <button class="is-num">4</button>
+          <button class="is-num">5</button>
+          <button class="is-num">6</button>
+          <button class="is-operator minus-button">&minus;</button>
+
+          <button class="is-num">1</button>
+          <button class="is-num">2</button>
+          <button class="is-num">3</button>
+          <button class="is-operator plus-button">&plus;</button>
+
+          <button class="is-num is-zero">0</button>
+          <button class="is-equals equals-button">&equals;</button>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

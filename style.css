@@ -8,26 +8,52 @@
 #root {
   height: 100dvh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 1em;
+}
+
+h1 {
+  margin-bottom: 1em;
 }
 
 .main {
   padding: 1em;
   border: 1px solid black;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .main {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .main {
+    max-width: 400px;
+  }
 }
 
 .display {
-  text-align: right;
-  border: 1px solid gray;
+  border: 1px solid #778da9;
   margin-bottom: 1em;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4ch;
+}
+
+.display input {
+  text-align: right;
+  border: none;
 }
 
 .small-display {
   font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .large-display {
@@ -40,17 +66,28 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.inputs {
+.inputs button {
   font-size: 28px;
-  border: 1px solid gray;
   padding: 20px;
+  color: #415a77;
+  background-color: #e0e1dd;
+  border: 1px solid #778da9;
+  border-radius: 5px;
 }
 
-.inputs:hover {
+.inputs button:hover {
   cursor: pointer;
 }
 
 .is-zero,
 .is-clear {
   grid-column: span 3;
+}
+
+.is-zero {
+  background-color: #adc178 !important;
+}
+
+.is-clear {
+  background-color: #caf0f8 !important;
 }
